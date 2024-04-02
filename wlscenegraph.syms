@@ -1,0 +1,7 @@
+{
+	global:
+		wls_*;
+		_wls_*;
+	local:
+		*;
+};
