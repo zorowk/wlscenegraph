@@ -115,6 +115,10 @@ subdir('include')
 subdir('backend')
 wls_inc = include_directories('include')
 
+if get_option('documentation').enabled()
+        subdir('doc')
+endif
+
 symbols_file = 'wlscenegraph.syms'
 symbols_flag = '-Wl,--version-script,@0@/@1@'.format(meson.current_source_dir(), symbols_file)
 lib_wls = library(

@@ -28,7 +28,7 @@ jobs:
     - name: Install Build Requirements
       run: |
         apt-get update -q
-        apt-get install -y meson libwlroots-dev libwayland-dev cppcheck
+        apt-get install -y meson libwlroots-dev libwayland-dev cppcheck doxygen graphviz libxslt1-dev xmlto
 
     - name: Build with Meson
       run: |

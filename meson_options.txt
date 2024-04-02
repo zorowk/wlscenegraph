@@ -1,0 +1,1 @@
+option('documentation', description: 'Build the documentation (requires Doxygen)', type: 'feature', value: 'enabled')

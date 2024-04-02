@@ -32,7 +32,7 @@ ref example
 fit, but be prepared to justify it to your peers.
 
 ### Code Style
-* wsm is written in C with a style similar to the kernel style, but with a
+* wlscenegraph is written in C with a style similar to the kernel style, but with a
 few notable differences.
 * Try to keep your code conforming to C11 and POSIX as much as possible, and do
 not use GNU extensions.
@@ -57,3 +57,5 @@ not use GNU extensions.
 * Support window backblur
 * Supprot window animator
 * Support particle simulations
+
+[wlroots]: https://gitlab.freedesktop.org/wlroots/wlroots
