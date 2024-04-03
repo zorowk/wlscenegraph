@@ -11,6 +11,7 @@ Run these commands to make install :
 ```
 
 ## doxygen
+set the documentation in meson_options.txt to enabled, reuse meson to compile, and you will see that the documentation has been generated in the build/doc/doxygen/html/wlscenegraph directory.
 
 ### From Packages
 
@@ -19,8 +20,23 @@ Install dependencies:
 
 build dependencies(for arch linux):
 * meson \*
-* [wlroots]
-  
+* [wlroots] \*
+* pkgconfig \*
+* wayland \*
+* doxygen 
+* graphviz 
+* libxslt 
+* xmlto
+
+build dependencies(for debian):
+* meson \*
+* libwlroots-dev \*
+* libwayland-dev \*
+* doxygen 
+* graphviz 
+* libxslt1-dev 
+* xmlto
+
 ## Configuration
 
 ## Running
