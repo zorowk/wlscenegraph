@@ -1,5 +1,5 @@
 # wlscenegraph
-provides a open source high performance 3D graphics toolkit for Wayland compositor. It is based on the wlroots Wayland compositor library, which allows development of automated rendering and image post-processing based on wlroots, while supporting modern window animations.guidelines are based on performance and supplemented by design.
+provides a open source high performance graphics toolkit for Wayland compositor. It is based on the wlroots Wayland compositor library, which allows development of automated rendering and image post-processing based on wlroots, while supporting modern window animations.guidelines are based on performance and supplemented by design.
 
 ## Release Signatures
 
@@ -73,5 +73,8 @@ not use GNU extensions.
 * Support window backblur
 * Supprot window animator
 * Support particle simulations
+* Support button and image item
+* Support thread Animator
+* Support State
 
 [wlroots]: https://gitlab.freedesktop.org/wlroots/wlroots
