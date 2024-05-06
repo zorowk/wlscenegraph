@@ -97,6 +97,16 @@ internal_features = {
 internal_config = configuration_data()
 
 wayland_project_options = ['tests=false', 'documentation=false']
+xkbcommon = dependency(
+	'xkbcommon',
+	fallback: 'libxkbcommon',
+	default_options: [
+		'enable-tools=false',
+		'enable-x11=false',
+		'enable-docs=false',
+		'enable-xkbregistry=false',
+	],
+)
 math = cc.find_library('m')
 rt = cc.find_library('rt')
 wlroots_version = ['>=0.17.0', '<0.18.0']
@@ -107,10 +117,12 @@ wls_files = []
 wls_deps = [
 	math,
 	rt,
-        wlroots,
-        wayland_server,
+    xkbcommon,
+    wlroots,
+    wayland_server,
 ]
 
+subdir('protocol')
 subdir('include')
 subdir('backend')
 wls_inc = include_directories('include')
