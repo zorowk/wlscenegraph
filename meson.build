@@ -115,13 +115,14 @@ wayland_server = dependency('wayland-server', version: '>=1.20.0')
 
 wls_files = []
 wls_deps = [
-	math,
-	rt,
+    math,
+    rt,
     xkbcommon,
     wlroots,
     wayland_server,
 ]
 
+subdir('animation')
 subdir('protocol')
 subdir('include')
 subdir('backend')
